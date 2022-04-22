@@ -5,6 +5,8 @@ Reto Platzi: clonar la página de Google. Reforzarás conceptos como posicionami
 
 Objetivos del curso:
 
--Crear el Header de una página
--Estructurar el contenido principal de una página
--Construir el Footer de una página
+Crear el Header de una página
+
+Estructurar el contenido principal de una página
+
+Construir el Footer de una página
