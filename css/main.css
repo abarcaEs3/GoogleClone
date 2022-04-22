@@ -1,0 +1,181 @@
+/* Para reformatear los estilos que tiene el navegador por defecto */
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Le quitamos a todas las etiquetas de ancla la decoracion (subrayado) de manera golbal*/
+a {
+    text-decoration: none;
+    cursor: pointer; /*Le agregamos una manita cuando pasemos el mouse*/
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end; /*Esto le dice al navegador que mande todo el contenido a cualquiera de los extremos o al centro */
+}
+
+header nav .nav-right-section {
+    width: 250px;
+    height: auto; /*Con auto toma la altura del padre que es header el cual tiene una altura de 60px*/
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav .nav-right-section a {
+    margin-right: 10px;
+    color: #000;
+}
+
+nav .nav-right-section .menu-icon {
+    background-image: url('https://static.thenounproject.com/png/756729-200.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; /*Para que este del mismo tamaño del contenedor*/
+    width: 25px;
+    height: 25px;
+}
+
+nav .nav-right-section img {
+    border-radius: 50%;
+    margin-left: 10px;
+    width: 32px;
+    height: 32px;
+}
+
+main {
+    margin-top: 150px;
+    text-align: center;
+}
+
+main .main-logo {
+    width: 530px;
+    margin: 0 auto; /*Si ya le dimos una dimencion, y para certrar la etiqueta y no estar jugando con el left y right, usamos 0 auto*/
+    margin-bottom: 35px;
+}
+
+main .main-logo img {
+    width: 300px;
+}
+
+main .main-input {
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 35px; /*Esto empuja a los botones para que se posiciones abajo, ya que sobrepasa el tamaño del contenedor*/
+}
+
+main .main-input-container {
+    width: 525px;
+    border-radius: 30px;
+    border: 1px solid #dfe1e5;
+    display: flex; /*Para agrupar los elementos de forma lineal*/
+    justify-content: center;
+    align-items: center;
+}
+
+main .main-input input {
+    width: 450px;
+    height: 40px;
+    border: none;
+    outline: none;
+}
+
+main .main-input-container:hover { /*Le agregamos un efecto al input, que la pasar el curso parece que se suspende y tiene cierto color*/
+    box-shadow: 0 1px 6px 0 #20212447;
+    border-color: #dfe1e500;
+    /* border: :1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8; */
+}
+
+main .main-input .search-icon {
+    background-image: url('https://img.icons8.com/android/24/000000/search.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+
+main .main-input-container .micro-icon {
+    background-image: url('https://www.gstatic.com/images/branding/googlemic/2x/googlemic_color_24dp.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+}
+
+main .main-buttons div {
+    display: inline-block;
+}
+
+main .main-buttons button {
+    height: 32px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px; /*Arriba y abajo 0, y derecha e izquierda 15px*/
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover {
+    border: 1px solid #c6c6c6;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.1);
+    color: #222;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute; /*Para asegurarnos que nuestro footer este siempre al final de la pagina agrego el (position y bottom)*/
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Divide el contenido en 2 secciones*/
+    align-items: center;
+    font-size: 13px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul {
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left {
+    justify-self: left;
+}
+
+footer .footer-right {
+    justify-self: right;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
+
+
